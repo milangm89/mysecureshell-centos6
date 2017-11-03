@@ -1,0 +1,5 @@
+[mysecureshell]
+name=MySecureShell
+baseurl=http://mysecureshell.free.fr/repository/index.php/centos/6.4/
+enabled=1
+gpgcheck=0
