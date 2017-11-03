@@ -38,4 +38,7 @@ echo "$pwd_sftp" | passwd ftpuser --stdin
 echo "Restarting services"
 /etc/init.d/services restart sshd
 
+echo "Changing ownership of /var/www/html to apache"
+chown -R apache:apache /var/www/html
+
 echo " The username is : ftpuser and the password is : $pwd_sftp "
