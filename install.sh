@@ -2,7 +2,7 @@
 # Author :
 
 # Copying mysecureshell repo file
-cp -r ./mysecureshell.repo /etc/repos.d/mysecureshell.repo
+cp -r ./mysecureshell.repo /etc/yum.repos.d/mysecureshell.repo
 
 # Installing mysecureshell
 yum install -y mysecureshell
@@ -36,7 +36,7 @@ echo "$pwd_sftp" | passwd ftpuser --stdin
 #echo "ftpuser:$pwd_sftp" | chpasswd 
 
 echo "Restarting services"
-/etc/init.d/services restart sshd
+/etc/init.d/sshd restart
 
 echo "Changing ownership of /var/www/html to apache"
 chown -R apache:apache /var/www/html
