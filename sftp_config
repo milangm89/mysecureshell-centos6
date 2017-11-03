@@ -18,8 +18,8 @@
                                                 #       environment variable (ie: Home /home/$USER)
         IdleTimeOut             5m      #(in second) deconnect client is idle too long time
         ResolveIP               true    #resolve ip to dns
-ForceUser       www-data
-ForceGroup      www-data
+ForceUser       apache
+ForceGroup      apache
 DisableSetAttribute     true
 #       IgnoreHidden            true    #treat all hidden files as if they don't exist
 #       DirFakeUser             true    #Hide real file/directory owner (just change displayed permissions)
