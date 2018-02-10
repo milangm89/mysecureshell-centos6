@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author :
+# Author : Milan George
 
 # Copying mysecureshell repo file
 cp -r ./mysecureshell.repo /etc/yum.repos.d/mysecureshell.repo
