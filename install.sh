@@ -26,7 +26,7 @@ cp -rf ./sftp_config /etc/ssh/sftp_config
 
 echo "Creating sftp group and user. . \n"
 groupadd sftp_users
-useradd -m -d /var/www/html/ -s /bin/MySecureShell ftpuser
+useradd -m -d /var/www/html -s /bin/MySecureShell ftpuser
 
 echo "Installing mkpasswd"
 yum install expect -y
