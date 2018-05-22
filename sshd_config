@@ -14,6 +14,7 @@
 # SELinux about this change.
 # semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
 #
+
 Port 64567
 #AddressFamily any
 AddressFamily inet
@@ -133,7 +134,6 @@ AcceptEnv XMODIFIERS
 # override default of no subsystems
 #Subsystem sftp	/usr/libexec/openssh/sftp-server
 Subsystem sftp /bin/MySecureShell -c sftp-server
-
 
 # Example of overriding settings on a per-user basis
 #Match User anoncvs
