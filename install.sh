@@ -9,7 +9,7 @@ cp -r ./mysecureshell.repo /etc/yum.repos.d/mysecureshell.repo
 echo "============================"
 echo "Installing necessay packages"
 echo "============================"
-yum install -y mysecureshell expect
+yum --enablerepo=mysecureshell -y install mysecureshell expect
 
 # Making required changes in ssh config file
 echo "============================"
