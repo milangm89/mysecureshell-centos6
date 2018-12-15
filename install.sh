@@ -33,7 +33,7 @@ echo "============================"
 groupadd sftp_users
 useradd -m -d /var/www/html -s /bin/MySecureShell sftpuser
 
-pwd_sftp=`mkpasswd -l 15`
+pwd_sftp=$(mkpasswd -l 15)
 echo "$pwd_sftp" | passwd sftpuser --stdin
 #echo "ftpuser:$pwd_sftp" | chpasswd 
 
