@@ -17,14 +17,14 @@ echo -e "Making required changes in sshd config file \n"
 echo -e "Copying current sshd config file as backup \n"
 echo "============================"
 #cp /etc/ssh/sshd_config /etc/ssh/sshd_config_orig
-cp /etc/ssh/sshd_config /etc/ssh/sshd_config-`date +"%Y%m%d_%H%M%S"`
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config-$(date +"%Y%m%d_%H%M%S")
 cp -rf ./sshd_config /etc/ssh/sshd_config
 
 echo "============================"
 echo -e "Copying sftp config file . . \n"
 echo "============================"
 #cp /etc/ssh/sftp_config /etc/ssh/sftp_config_orig
-cp /etc/ssh/sftp_config /etc/ssh/sftp_config-`date +"%Y%m%d_%H%M%S"`
+cp /etc/ssh/sftp_config /etc/ssh/sftp_config-$(date +"%Y%m%d_%H%M%S")
 cp -rf ./sftp_config /etc/ssh/sftp_config
 
 echo "============================"
