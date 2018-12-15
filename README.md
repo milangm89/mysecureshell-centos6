@@ -1,6 +1,6 @@
 # mysecureshell-centos6
 
-Simple SFTP server setup script for Centos6 LAMP stack
+Simple SFTP server setup script for Centos6/Amazon Linux LAMP stack
 
 OS supported : Centos6, Amazon linux(Amazon Linux AMI)
 ssh/sftp port : 64567
